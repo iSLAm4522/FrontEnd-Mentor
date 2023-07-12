@@ -16,7 +16,7 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
 
 ### Screenshot
 
-![](./images/Frontend-Mentor-NFT-preview-card-component.png)
+![](./images/Screenshot%202023-07-12%20at%2022-18-21%20Frontend%20Mentor%20NFT%20preview%20card%20component.png)
 
 
 ### Links

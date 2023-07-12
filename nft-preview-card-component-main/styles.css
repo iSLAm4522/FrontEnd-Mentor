@@ -81,7 +81,9 @@ main {
   display: block;
   cursor: pointer;
 }
-
+h1{
+  font-size: 1.5rem;
+}
 h1:hover,
 .footer span:last-of-type:hover {
   color: var(--secondaryColor);
