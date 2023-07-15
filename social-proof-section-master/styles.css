@@ -1,0 +1,242 @@
+:root {
+  --very-dark-megenta: hsl(300, 43%, 22%);
+  --soft-pink: hsl(333, 80%, 67%);
+  --dark-grayish-megenta: hsl(303, 10%, 53%);
+  --light-grayish-megenta: hsl(300, 24%, 96%);
+  --white: hsl(0, 0%, 100%);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "League Spartan", sans-serif;
+  background-color: var(--white);
+  display: grid;
+  place-items: center;
+}
+
+main {
+  width: 80rem;
+  padding:2.5rem;
+}
+
+/*Upper section*/
+.upper-section {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 5%;
+  margin-bottom: 4rem;
+}
+
+.info {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+.info h1 {
+  font-size: 4.5rem;
+  font-weight: 700;
+  margin: 0;
+  color: var(--very-dark-megenta);
+}
+
+.info p {
+  font-size: 1.5rem;
+  color: var(--dark-grayish-megenta);
+}
+
+.rate {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.rate-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 80%;
+  padding: 1.25rem;
+  text-align: left;
+  background-color: var(--light-grayish-megenta);
+  color: var(--very-dark-megenta);
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+.rate-item:nth-of-type(1) {
+  align-self: flex-start;
+}
+.rate-item:nth-of-type(2) {
+  align-self: center;
+}
+.rate-item:nth-of-type(3) {
+  align-self: flex-end;
+}
+
+/*lower section*/
+.lower-section {
+  height: 18rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 5%;
+  color: var(--white);
+}
+
+.card-item {
+  background-color: var(--very-dark-megenta);
+  width: calc(90% / 3);
+  font-size: 1.2rem;
+  color: var(--white);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+.person{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.card-item img{
+  width: 3rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  -webkit-border-radius: 50%;
+}
+.outer-span{
+  font-weight: bold;
+  margin-left: 1.5rem;
+}
+.inner-span{
+  display: block;
+  font-weight:normal;
+  margin-top: 0.5rem;
+  color: var(--soft-pink);
+}
+
+.card-item p{
+    margin-top: 2rem;
+}
+.card-item:nth-of-type(1){
+    align-self: flex-start;
+}
+.card-item:nth-of-type(2){
+    align-self: center;
+}
+.card-item:nth-of-type(3){
+    align-self: flex-end;
+}
+/*X-large devices less than 1280px*/
+@media (max-width:80rem){
+  main{
+    width: 75rem;
+  }
+}
+
+ /* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) { 
+  main{
+   width: 62rem;
+  }
+  .info h1{
+    font-size: 4rem;
+  }
+  .rate-item{
+    width: 90%;
+  }
+  .lower-section{
+    height: 20rem;
+  }
+ }
+
+ /* Medium devices (tablets, less than 992px) */
+ @media (max-width: 991.98px) {
+  main{
+    width: 48rem;
+  }
+  .info h1{
+    font-size: 3rem;
+  }
+  .rate-item{
+    width:100%;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .lower-section{
+    height: 25rem;
+  }
+  .card-item{
+    padding: 1.5rem;
+  }
+  .outer-span{
+    margin-left: 1rem;
+  }
+}
+
+ /* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  main{
+    width: 36rem;
+  }
+  .upper-section{
+    flex-direction: column;
+  }
+  .info{
+    width: 100%;
+    text-align: center;
+  }
+  .info h1{
+    font-size: 4rem;
+  }
+  .rate{
+    width: 100%;
+    margin-top: 3rem;
+  }
+
+  .lower-section{
+    flex-direction: column;
+    gap: 2rem;
+    height: auto;
+  }
+  .card-item{
+    width: 100%;
+    padding: 2rem;
+  }
+  
+}
+
+
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  main{
+    width: 23rem;
+    padding:2.5rem 1.5rem;
+  }
+  .info h1{
+    font-size: 3rem;
+  }
+ }
